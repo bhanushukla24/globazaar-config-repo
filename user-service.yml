@@ -1,3 +1,4 @@
+# User Service Configuration
 spring:
   application:
     name: user-service
@@ -14,9 +15,11 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
 
+# Server Port Configuration
 server:
   port: 8080
 
+# Eureka Client Configuration
 eureka:
   client:
     service-url:
@@ -24,6 +27,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
 
+# Actuator Endpoints
 management:
   endpoints:
     web:
